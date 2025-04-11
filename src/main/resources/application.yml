@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: enterpriseapi
+    
+sageworks:
+  client-id: ENC(1DS+H2h3ZPi91f6BI8lbhcpAvf+3RKN6cU5i6kactEFIzLzfxbJKSiUdtZj/f528emtBOIH9BtBXKainq8RBWLVGL1ERNWC9MEY789rFWIo=)
+  client-secret: ENC(DxFNbks9E7DDRjkiwL8VpKiZHPOJIAlvZxIihPwxhJSFx3oXOgAHDmGe2j41DiZrNz4oU1JbklRKHO5YG8VpHeWE/obWz9e2sHo51c9lzoo=)
+  auth-url: https://uatauth.sageworks.com/connect/token
+  api-url: https://uatapi.sageworks.com/v1/proposed-loans
+
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] [%X{correlationId}] %-5level %logger{36} - %msg%n"
+  level:
+    com.example.enterpriseapi: INFO
+    com.example.enterpriseapi.client: DEBUG
